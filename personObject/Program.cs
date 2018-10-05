@@ -47,10 +47,44 @@ namespace personObject
             list_of_lecturers[0] = lecturer1;
             list_of_lecturers[1] = lecturer2;
 
+            Lecturers paul = new Lecturers();
+            paul.setFirstName("Paul");
+           
+            Lecturers mahmood = new Lecturers();
+            mahmood.setFirstName("Mahmood");
+            Lecturers Andrea = new Lecturers();
+            Andrea.setFirstName("Andrea");
+
+            Stack listLecturers = new Stack();
+            listLecturers.Push(paul);
+            listLecturers.Push(mahmood);
+            listLecturers.Push(Andrea);
+            if (listLecturers.Contains(mahmood))
+            {
+                Console.WriteLine(mahmood.sendMessage("I am not coming to class tomorrow"));
+            }
+            else
+            {
+                Console.WriteLine(mahmood.sendMessage("mahmmod is not in our collection"));
+            }
+
+
+
             Stack list = new Stack();
             list.Push(3);
             list.Push(4);
             list.Push(5);
+            
+            list.Pop();
+            if (list.Contains(12))
+            {
+                Console.WriteLine("The number 12 exists in my collection.");
+            }
+            else
+            {
+                Console.WriteLine("Nope, 12 has been removed.");
+            }
+            foreach (var i in list) Console.WriteLine(i);
 
 
             Console.WriteLine(student1.sendMessage("Student List"));
