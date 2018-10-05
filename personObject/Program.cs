@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -46,6 +47,12 @@ namespace personObject
             list_of_lecturers[0] = lecturer1;
             list_of_lecturers[1] = lecturer2;
 
+            Stack list = new Stack();
+            list.Push(3);
+            list.Push(4);
+            list.Push(5);
+
+
             Console.WriteLine(student1.sendMessage("Student List"));
             for (int i=0; i< list_of_students.Length; i++)
             {
@@ -58,7 +65,7 @@ namespace personObject
                 Console.WriteLine((i + 1) + ". " + list_of_lecturers[i].getFirstName() + " " + list_of_lecturers[i].getLastName());
             }
             
-            //Console.WriteLine("Awet's average score is: " + student1.GradeAverage());
+
             Console.ReadLine();
             
         }
