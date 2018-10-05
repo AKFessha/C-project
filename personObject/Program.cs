@@ -57,15 +57,18 @@ namespace personObject
 
             Stack listLecturers = new Stack();
             listLecturers.Push(paul);
-            listLecturers.Push(mahmood);
             listLecturers.Push(Andrea);
+            listLecturers.Push(mahmood);
+
+            listLecturers.Pop();
+
             if (listLecturers.Contains(mahmood))
             {
                 Console.WriteLine(mahmood.sendMessage("I am not coming to class tomorrow"));
             }
-            else
+            else if(listLecturers.Contains(Andrea))
             {
-                Console.WriteLine(mahmood.sendMessage("mahmmod is not in our collection"));
+                Console.WriteLine(Andrea.sendMessage("Please let mahmood know that I'm not coming today."));
             }
 
 
