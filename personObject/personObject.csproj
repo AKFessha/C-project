@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EnglishAssignmentPaper.cs" />
+    <Compile Include="IScore.cs" />
     <Compile Include="Lecturers.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
