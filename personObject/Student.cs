@@ -13,8 +13,15 @@ namespace personObject
         public int subjectThreeMark;
         public override float GradeAverage()
         {
-            //Just to test; fix the implementation later
             return (this.subjectOneMark + this.subjectTwoMark + this.subjectThreeMark)/3;
+        }
+        public override string sendMessage(string message)
+        {
+            var orginal = base.sendMessage(message);
+            var sb = new StringBuilder(orginal);
+            sb.AppendLine(" ");
+            sb.AppendLine("You are recieving this email because you consented to recieve marketing emails");
+            return sb.ToString();
         }
         
 
