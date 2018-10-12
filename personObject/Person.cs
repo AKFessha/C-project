@@ -48,9 +48,18 @@ namespace personObject
         {
             return age;
         }
-        public virtual string sendMessage(string text)
+        public virtual string sendMessage(string message)
         {
-            return text;
+            // we use the string builder class to manipulate strings. 
+            var sb = new StringBuilder();
+            // string.Format() is a static method that returns a formatted string
+            var timestamp = string.Format("Sent on{0:D} at {0:t}", DateTime.Now);
+            sb.AppendLine(timestamp);
+            sb.AppendLine(" ");
+            sb.AppendLine(" Dear " + firstName + ",");
+            sb.AppendLine(message);
+            return sb.ToString();
+
         }
 
     }
