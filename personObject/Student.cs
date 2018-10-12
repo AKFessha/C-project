@@ -20,7 +20,7 @@ namespace personObject
             var orginal = base.sendMessage(message);
             var sb = new StringBuilder(orginal);
             sb.AppendLine(" ");
-            sb.AppendLine("You are recieving this email because you consented to recieve marketing emails");
+            sb.AppendLine("You are recieving this email because you consented to recieve marketing emails.");
             return sb.ToString();
         }
         

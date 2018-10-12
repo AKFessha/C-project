@@ -12,6 +12,7 @@ namespace personObject
         static void Main(string[] args)
         {
             Student[] list_of_students = new Student[2];
+            ArrayList studentList = new ArrayList();
             Lecturers[] list_of_lecturers = new Lecturers[2];
            
             Student student1 = new Student();
@@ -23,6 +24,8 @@ namespace personObject
             student1.subjectTwoMark = 80;
             student1.subjectThreeMark = 90;
 
+            
+
             Student student2 = new Student();
             student2.setFirstName("Ismaiel");
             student2.setLastName("Adam");
@@ -31,6 +34,13 @@ namespace personObject
 
             list_of_students[0] = student1;
             list_of_students[1] = student2;
+            studentList.Add(student1);
+            studentList.Add(student2);
+            
+            foreach(Student i in studentList)
+            {
+                Console.WriteLine(i.getFirstName() + " " + i.getLastName());
+            }
 
             Lecturers lecturer1 = new Lecturers();
             lecturer1.setFirstName("Paul");
