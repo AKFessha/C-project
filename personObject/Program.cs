@@ -82,24 +82,6 @@ namespace personObject
             }
 
 
-
-            Stack list = new Stack();
-            list.Push(3);
-            list.Push(4);
-            list.Push(5);
-            
-            list.Pop();
-            if (list.Contains(12))
-            {
-                Console.WriteLine("The number 12 exists in my collection.");
-            }
-            else
-            {
-                Console.WriteLine("Nope, 12 has been removed.");
-            }
-            foreach (var i in list) Console.WriteLine(i);
-
-
             Console.WriteLine(student1.sendMessage("Student List"));
             for (int i=0; i< list_of_students.Length; i++)
             {
