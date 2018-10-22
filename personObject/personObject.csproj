@@ -50,6 +50,7 @@
     <Compile Include="ProgramingAssignmentPaper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
+    <Compile Include="TotalgradeUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
