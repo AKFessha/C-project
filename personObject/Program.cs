@@ -69,8 +69,12 @@ namespace personObject
             listLecturers.Push(paul);
             listLecturers.Push(Andrea);
             listLecturers.Push(mahmood);
+            
+           
 
             listLecturers.Pop();
+            listLecturers.Peek();
+          
 
             if (listLecturers.Contains(mahmood))
             {
@@ -92,9 +96,8 @@ namespace personObject
             for (int i = 0; i < list_of_lecturers.Length; i++)
             {
                 Console.WriteLine((i + 1) + ". " + list_of_lecturers[i].getFirstName() + " " + list_of_lecturers[i].getLastName());
+                
             }
-            
-
             Console.ReadLine();
             
         }
