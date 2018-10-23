@@ -15,6 +15,7 @@ namespace personObject
             ArrayList studentList = new ArrayList();
             Lecturers[] list_of_lecturers = new Lecturers[2];
            
+           
             Student student1 = new Student();
             student1.setFirstName("Awet");
             student1.setLastName("Fessha");
@@ -73,8 +74,8 @@ namespace personObject
            
 
             listLecturers.Pop();
-            listLecturers.Peek();
-          
+            
+              
 
             if (listLecturers.Contains(mahmood))
             {
@@ -98,6 +99,7 @@ namespace personObject
                 Console.WriteLine((i + 1) + ". " + list_of_lecturers[i].getFirstName() + " " + list_of_lecturers[i].getLastName());
                 
             }
+
             Console.ReadLine();
             
         }
